@@ -1,0 +1,30 @@
+html{
+    background-image: url(../../main_background.jpeg);
+    background-size: cover;
+}
+body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+}
+header {
+    background-color: #3DF315;
+    color: #E62F23;
+    padding: 10px 20px;
+    text-align: center;
+}
+nav {
+    background-color: #E62F23;
+    padding: 5px 20px;
+    text-align: center;
+}
+nav a {
+    color: #fff;
+    margin: 0 10px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+section {
+    padding: 20px;
+}

@@ -1,0 +1,49 @@
+html{
+    background-image: url(../../info_background.jpeg);
+    background-size: cover;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+header {
+    text-align: center;
+    font-size: 48px;
+    z-index: 2;
+    display: flex;
+}
+
+nav {
+    text-align: center;
+    z-index: 2;
+}
+nav a {
+    text-decoration: none;
+    margin: 0 10px;
+    z-index: 2;
+}
+nav a:hover {
+    text-decoration: underline;
+    z-index: 2;
+}
+
+.see-through-rectangle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+p, h2, h3{
+    z-index: 2;
+    display: block;
+}
