@@ -1,5 +1,6 @@
+
 html{
-    background-image: url(../../main_background.jpeg);
+    background-image: url(main_background.jpeg);
     background-size: cover;
 }
 body {
@@ -15,16 +16,14 @@ header {
 }
 nav {
     background-color: #E62F23;
-    padding: 5px 20px;
+    padding: 10px 20px;
     text-align: center;
 }
 nav a {
     color: #fff;
+    text-decoration: none;
     margin: 0 10px;
 }
 nav a:hover {
     text-decoration: underline;
-}
-section {
-    padding: 20px;
 }

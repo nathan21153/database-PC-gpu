@@ -1,7 +1,7 @@
-html{
-    background-image: url(../../info_background.jpeg);
-    background-size: cover;
 
+html{
+    background-image: url(info_background.jpeg);
+    background-size: cover;
 }
 
 body {
@@ -13,26 +13,31 @@ body {
     z-index: 2;
 }
 header {
+    padding: 10px 20px;
     text-align: center;
     font-size: 48px;
     z-index: 2;
-    display: flex;
 }
 
 nav {
+    padding: 10px 20px;
     text-align: center;
     z-index: 2;
 }
+
 nav a {
+
     text-decoration: none;
     margin: 0 10px;
-    z-index: 2;
-}
-nav a:hover {
-    text-decoration: underline;
-    z-index: 2;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+}
 .see-through-rectangle {
     position: absolute;
     top: 0;
@@ -42,8 +47,4 @@ nav a:hover {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
-}
-p, h2, h3{
-    z-index: 2;
-    display: block;
 }
