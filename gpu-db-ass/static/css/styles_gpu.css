@@ -1,8 +1,28 @@
-
 html{
-    background-image: url(info_background.jpeg);
+    background-image: url(main_background.jpeg);
     background-size: cover;
 }
+
+tbody {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.box {
+    background-color: #050303;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+
 
 body {
     font-family: Arial, sans-serif;
@@ -36,13 +56,3 @@ nav a:hover {
     z-index: 2;
 }
 
-.see-through-rectangle {
-    position: absolute;
-    top: 138px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50%;
-    height: 80%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
