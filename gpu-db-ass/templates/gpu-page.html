@@ -1,67 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>GPU database</title>
-    <meta charset="UTF-8">
-    <link type="text/css" rel="stylesheet" href="../static/css/styles_gpu.css">
+   <title>GPU database</title>
+   <meta charset="UTF-8">
+   <link type="text/css" rel="stylesheet" href="../static/css/styles_gpu.css">
 </head>
-    <body>
+   <header>
+       <h1>GPU database</h1>
+   </header>
 
-        <header>
-            <h1>GPU database</h1>
-        </header>
 
-        <nav>
-            <a href="/">Home</a>
-            <a href="/info-page">Info_page</a>
-            <a href="/gpu-page">GPU_database</a>
-            <a href="/AMD-gpu-page">AMD_GPUs</a>
-            <a href="/NVIDIA-gpu-page">NVIDIA_GPUs</a>
-        </nav>
-    </body>
-    <table>
-        <thead>
-            <tr>
-                <td>chip_manufacture</td>
-                <td>series</td>
-                <td>GPU</td>
-                <td>Vram</td>
-                <td>clockspeed_in_MHz</td>
-                <td>is_currently_manufactured</td>
-                <td>average_price_NZD</td>
-                <td>average_benchmark</td>
-            </tr>
-        </thead>
+   <nav>
+       <a href="/">Home</a>
+       <a href="/info-page">Info_page</a>
+       <a href="/gpu-page">GPU_database</a>
+       <a href="/AMD-gpu-page">AMD_GPUs</a>
+       <a href="/NVIDIA-gpu-page">NVIDIA_GPUs</a>
+   </nav>
+<body>
+   <main>
+       <div class="table-box">
+           <table>
+               <thead>
+                   <tr>
+                       <th>chip_manufacture</th>
+                       <th>series</th>
+                       <th>GPU</th>
+                       <th>Vram</th>
+                       <th>clockspeed_in_MHz</th>
+                       <th>is_currently_manufactured</th>
+                       <th>average_price_NZD</th>
+                       <th>average_benchmark</th>
+                   </tr>
+               </thead>
 
-        <tbody>
-            {% for row in data %}
-                <tr>
-                    <td>
-                        {{ row[0] }}
-                    </td>
-                    <td>
-                        {{ row[1] }}
-                    </td>
-                    <td>
-                        {{ row[2] }}
-                    </td>
-                    <td>
-                        {{ row[3] }}
-                    </td>
-                    <td>
-                        {{ row[4] }}
-                    </td>
-                    <td>
-                        {{ row[5] }}
-                    </td>
-                    <td>
-                        {{ row[6] }}
-                    </td>
-                    <td>
-                        {{ row[7] }}
-                    </td>
-                </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+
+               <tbody>
+                   {% for row in data %}
+                       <tr>
+                           <td>
+                               {{ row[0] }}
+                           </td>
+                           <td>
+                               {{ row[1] }}
+                           </td>
+                           <td>
+                               {{ row[2] }}
+                           </td>
+                           <td>
+                               {{ row[3] }}
+                           </td>
+                           <td>
+                               {{ row[4] }}
+                           </td>
+                           <td>
+                               {{ row[5] }}
+                           </td>
+                           <td>
+                               {{ row[6] }}
+                           </td>
+                           <td>
+                               {{ row[7] }}
+                           </td>
+                       </tr>
+                   {% endfor %}
+               </tbody>
+           </table>
+       </div>
+   </main>
+</body>
 </html>

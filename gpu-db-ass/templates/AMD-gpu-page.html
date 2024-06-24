@@ -1,28 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>head tags</title>
-  <meta charset="UTF-8">
-  <link type="text/css" rel="stylesheet" href="../static/css/styles-AMD.css">
+    <title>GPU database</title>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="../static/css/styles_gpu.css">
 </head>
-    <body>
+    <header>
+        <h1>GPU database</h1>
+    </header>
 
-        <header>
-            <h1>GPU database</h1>
-        </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/info-page">Info_page</a>
+        <a href="/gpu-page">GPU_database</a>
+        <a href="/AMD-gpu-page">AMD_GPUs</a>
+        <a href="/NVIDIA-gpu-page">NVIDIA_GPUs</a>
+    </nav>
+<body>
+    <main>
+        <div class="table-box">
+            <table>
+                <thead>
+                    <tr>
+                        <th>chip_manufacture</th>
+                        <th>series</th>
+                        <th>GPU</th>
+                        <th>Vram</th>
+                        <th>clockspeed_in_MHz</th>
+                        <th>is_currently_manufactured</th>
+                        <th>average_price_NZD</th>
+                        <th>average_benchmark</th>
+                    </tr>
+                </thead>
 
-        <nav>
-            <a href="/">Home</a>
-            <a href="/info-page">Info_page</a>
-            <a href="/gpu-page">GPU_database</a>
-            <a href="/AMD-gpu-page">AMD_GPUs</a>
-            <a href="/NVIDIA-gpu-page">NVIDIA_GPUs</a>
-        </nav>
-
-        <h2>Gaming GPU database</h2>
-        <p>Here you can find information for 20 popular gaming GPUs and sort throughout  and filter them according you your needs
-        for the list of all gaming GPUs click "GPU_database"</p>
-        <p>for information page explaining the list's categories as well as other useful resources click "info_page"</p>
-
-    </body>
+                <tbody>
+                    {% for row in data %}
+                        <tr>
+                            <td>
+                                {{ row[0] }}
+                            </td>
+                            <td>
+                                {{ row[1] }}
+                            </td>
+                            <td>
+                                {{ row[2] }}
+                            </td>
+                            <td>
+                                {{ row[3] }}
+                            </td>
+                            <td>
+                                {{ row[4] }}
+                            </td>
+                            <td>
+                                {{ row[5] }}
+                            </td>
+                            <td>
+                                {{ row[6] }}
+                            </td>
+                            <td>
+                                {{ row[7] }}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
 </html>

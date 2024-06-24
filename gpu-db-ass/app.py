@@ -29,7 +29,7 @@ def info_page():
 @app.route('/gpu-page')
 def gpu_page():
 
-    query = "SELECT chip_manufacture, series, GPU, Vram, clockspeed_in_MHz, is_currently_manufactured, average_price_NZD, average_benchmark FROM sheet_gpu_data WHERE chip_manufacture = 'AMD' "
+    query = "SELECT chip_manufacture, series, GPU, Vram, clockspeed_in_MHz, is_currently_manufactured, average_price_NZD, average_benchmark FROM sheet_gpu_data"
     connection = connection_creation(DATABASE)
     cursor = connection.cursor()
     cursor.execute(query, )

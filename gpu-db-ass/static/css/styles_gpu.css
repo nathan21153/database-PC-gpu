@@ -1,58 +1,62 @@
+
+
+
+
+
 html{
-    background-image: url(main_background.jpeg);
-    background-size: cover;
+   background-image: url(main_background.jpeg);
+   background-size: cover;
 }
-
-tbody {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
-.box {
-    background-color: #050303;
-    border: 2px solid #000000;
-    border-radius: 8px;
-    padding: 20px;
-    max-width: 400px;
-    width: 100%;
-}
-
-
-
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    z-index: 2;
+       font-family: Arial, sans-serif;
+       margin: auto;
+       padding: 0;
+       grid-template-columns: 1fr 4fr;
+       color: black;
 }
 header {
-    background-color: #3DF315;
-    color: #E62F23;
-    padding: 10px 20px;
-    text-align: center;
-    z-index: 2;
+   background-color: #3DF315;
+   color: #E62F23;
+   padding: 10px 20px;
+   text-align: center;
 }
-
 nav {
-    background-color: #E62F23;
-    padding: 10px 20px;
-    text-align: center;
-    z-index: 2;
+   background-color: #E62F23;
+   padding: 10px 20px;
+   text-align: center;
 }
 nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-    z-index: 2;
+   color: #000000;
+   text-decoration: none;
+   margin: 0 10px;
 }
 nav a:hover {
-    text-decoration: underline;
-    z-index: 2;
+   text-decoration: underline;
+}
+
+
+table {
+   left: 90px;
+}
+
+
+
+
+.table-box h2 {
+   margin-top: 0;
+}
+
+
+.table-box table {
+   width: 100%;
+   border-collapse: collapse;
+   margin-top: 10px;
+}
+
+
+.table-box th, .table-box td {
+   border: 2px solid #000000;
+   padding: 8px;
+   text-align: left;
 }
 
