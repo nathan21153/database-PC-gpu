@@ -6,23 +6,29 @@
   <link type="text/css" rel="stylesheet" href="../static/css/styles_gpu_main.css">
 </head>
     <body>
-
         <header>
             <h1>GPU database</h1>
         </header>
-
+        <div class="black-line"></div>
         <nav>
             <a href="/">Home</a>
             <a href="/info-page">Info_page</a>
             <a href="/gpu-page">GPU_database</a>
             <a href="/AMD-gpu-page">AMD_GPUs</a>
             <a href="/NVIDIA-gpu-page">NVIDIA_GPUs</a>
+
+                <form method="post" action="/search">
+                    <label for="searchbox">Search GPU database:</label>
+                    <input type="text" name="Search" id="searchbox">
+                    <input type="submit" value="Search">
+                </form>
         </nav>
 
         <h2>Gaming GPU database</h2>
         <p>Here you can find information for 20 popular gaming GPUs and sort throughout  and filter them according you your needs
         for the list of all gaming GPUs click "GPU_database"</p>
         <p>for information page explaining the list's categories as well as other useful resources click "info_page"</p>
+        <p>you can search the database for any relevant information using the search box below the links!</p>
 
     </body>
 </html>

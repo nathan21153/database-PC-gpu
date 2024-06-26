@@ -9,14 +9,24 @@ body {
        grid-template-columns: 1fr 4fr;
        color: black;
 }
+.black-line {
+    border: none;
+    height: 2px;
+    background-color: black;
+    z-index: 10;
+    width: 100%;
+}
+
 header {
-   background-color: #3DF315;
-   color: #E62F23;
+   background-color: grey;
+   background-size: auto;
    padding: 10px 20px;
    text-align: center;
+
 }
+
 nav {
-   background-color: #E62F23;
+   background-color: grey;
    padding: 10px 20px;
    text-align: center;
 }

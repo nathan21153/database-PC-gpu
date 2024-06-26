@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import sqlite3
 from sqlite3 import Error
 
@@ -20,6 +20,8 @@ def connection_creation(db_filename):
 def main_page():
     return render_template('main-page.html')
 
+if __name__ == '__main__':
+    app.run()
 
 @app.route('/info-page')
 def info_page():
@@ -38,10 +40,6 @@ def gpu_page():
     print(data_list)
 
     return render_template('gpu-page.html', data=data_list)
-
-
-if __name__ == '__main__':
-    app.run()
 
 
 @app.route('/NVIDIA-gpu-page')
@@ -67,3 +65,22 @@ def AMD_PAGE():
     print(data_list)
 
     return render_template('AMD-gpu-page.html', data=data_list)
+
+
+@app.route('/search', methods=['GET', 'POST'])
+def searching():
+
+    look_up = request.form['Search']
+    title = "search for: '" + look_up + "'"
+    look_up = "%" + look_up + "%"
+
+    query = "SELECT chip_manufacture, series, GPU, Vram, clockspeed_in_MHz, is_currently_manufactured, average_price_NZD, average_benchmark FROM sheet_gpu_data WHERE chip_manufacture like ? or series like ? or GPU like ? or Vram like ? or clockspeed_in_MHz like ? or is_currently_manufactured like ? or average_price_NZD like ? or average_price_NZD like ?"
+    connection = connection_creation(DATABASE)
+    cursor = connection.cursor()
+    cursor.execute(query, (look_up, look_up, look_up, look_up, look_up, look_up, look_up, look_up, ))
+
+    data_list = cursor.fetchall()
+    print(data_list)
+
+    return render_template('gpu-page.html', data=data_list, page_title = title)
+

@@ -1,5 +1,5 @@
 html{
-   background-image: url(main_background1.jpeg);
+   background-image: url(main_background.avif);
    background-size: cover;
 }
 body {
@@ -7,19 +7,9 @@ body {
        margin: auto;
        padding: 0;
        grid-template-columns: 1fr 4fr;
-       color: black;
+       color: #fff;
 }
-header {
-   background-color: #3DF315;
-   color: #E62F23;
-   padding: 10px 20px;
-   text-align: center;
-}
-nav {
-   background-color: #E62F23;
-   padding: 10px 20px;
-   text-align: center;
-}
+
 nav a {
    color: #000000;
    text-decoration: none;
@@ -34,9 +24,6 @@ table {
    left: 90px;
 }
 
-
-
-
 .table-box h2 {
    margin-top: 0;
 }
@@ -48,10 +35,28 @@ table {
    margin-top: 10px;
 }
 
-
-.table-box th, .table-box td {
-   border: 2px solid #000000;
-   padding: 8px;
-   text-align: left;
+li {
+    top: 5px;
 }
 
+.black-line {
+    border: none;
+    height: 2px;
+    background-color: black;
+    z-index: 10;
+    width: 100%;
+}
+
+header {
+   background-color: grey;
+   background-size: auto;
+   padding: 10px 20px;
+   text-align: center;
+    color: black;
+}
+
+nav {
+   background-color: grey;
+   padding: 10px 20px;
+   text-align: center;
+}

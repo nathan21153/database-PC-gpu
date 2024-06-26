@@ -11,20 +11,28 @@ body {
     justify-content: center;
     z-index: 2;
 }
+.black-line {
+    width: 100%;
+    border: none;
+    height: 2px;
+    background-color: black;
+    z-index: 10;
+
+}
+
 header {
-    background-color: #3DF315;
-    color: #E62F23;
-    padding: 10px 20px;
-    text-align: center;
-    z-index: 2;
+   background-color: grey;
+   background-size: auto;
+   padding: 10px 20px;
+   text-align: center;
 }
 
 nav {
-    background-color: #E62F23;
-    padding: 10px 20px;
-    text-align: center;
-    z-index: 2;
+   background-color: grey;
+   padding: 10px 20px;
+   text-align: center;
 }
+
 nav a {
     color: #000000;
     text-decoration: none;
@@ -38,11 +46,11 @@ nav a:hover {
 
 .see-through-rectangle {
     position: absolute;
-    top: 138px;
+    top: 161px;
     left: 50%;
     transform: translateX(-50%);
     width: 50%;
-    height: 80%;
+    height: max-content;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
